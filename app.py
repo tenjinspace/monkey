@@ -8,4 +8,5 @@ rawData = r.post(baseUrl)
 rawData = rawData.json()
 
 df = pd.DataFrame(rawData["Data"])
+st.table(rawData)
 st.dataframe(df)
