@@ -13,5 +13,7 @@ rawData = rawData.json()
 
 df = pd.DataFrame(rawData["Data"])
 newDf = df.dropna(axis=0, subset=['ISO3'])
+
+st.json(rawData)
 st.dataframe(df)
 st.dataframe(newDf)
