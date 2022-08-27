@@ -12,4 +12,5 @@ rawData = r.post(baseUrl)
 rawData = rawData.json()
 
 df = pd.DataFrame(rawData["Data"])
+df = df.dropna()
 st.dataframe(df)
