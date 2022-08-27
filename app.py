@@ -12,6 +12,7 @@ rawData = r.post(baseUrl)
 rawData = rawData.json()
 
 df = pd.DataFrame(rawData["Data"])
+df = df.replace(r'^s*$', float('NaN'), regex = True)
 newDf = df.dropna(axis=0, subset=['ISO3'])
 
 st.json(rawData)
