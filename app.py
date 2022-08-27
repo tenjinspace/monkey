@@ -30,5 +30,3 @@ if st.button('Click to load data'):
      rawData = getData(baseUrl)
      data = cleanData(rawData)
      displayData(data)
- else:
-     st.write('Goodbye')
