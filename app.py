@@ -17,4 +17,6 @@ newDf = df.dropna(axis=0, subset=['ISO3'])
 
 st.json(rawData)
 st.dataframe(df)
+st.write(df.info())
 st.dataframe(newDf)
+st.write(newDf.info())
