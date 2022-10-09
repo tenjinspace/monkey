@@ -26,7 +26,7 @@ def cleanData(rawData):
 def displayData(newDf):
     st.dataframe(newDf)
 
-if st.button('Click to load data'):
-    rawData = getData(baseUrl)
-    data = cleanData(rawData)
-    displayData(data)
+#if st.button('Click to load data'):
+#    rawData = getData(baseUrl)
+#    data = cleanData(rawData)
+#    displayData(data)
